@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.home {
+  background: url('../images/home_backdrop.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding: 0 100px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  display: flex;
+  align-items: flex-start;
+}
+.logo h1 {
+  font-size: 30px;
+  color: #333;
+  margin-left: 15px;
+}
+
+.logoDesign {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  position: relative;
+  border-radius: 4px 40%;
+}
+
+/* .logoDesign::after {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: rgb(98, 98, 98);
+  border-radius: 4px 0 0 0;
+}
+.logoDesign::before {
+  content: '';
+  border-radius: 0 0 4px 0;
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: rgb(98, 98, 98);
+  right: 0;
+  bottom: 0;
+} */
+
+.home {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 200px;
+}
+.home h1 {
+  font-size: 90px;
+}
+.home h1 span {
+  color: #7a9500;
+  font-family: 'Times New Roman', Times, serif;
+}
