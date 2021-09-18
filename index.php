@@ -20,6 +20,15 @@
         All the <span>experience</span><br />
         in new <i class="ri-arrow-right-line"></i>CRT Bank
       </h1>
+      <p>
+        Simple transfers, payment for utlities, functional statement, card
+        settiings, for which you used to have to the branch online-banking.
+      </p>
+      <div class="buttons">
+        <a href="" class="createUser">Create User</a>
+      </div>
     </section>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

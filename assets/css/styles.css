@@ -10,7 +10,9 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
-
+a {
+  text-decoration: none;
+}
 .home {
   background: url('../images/home_backdrop.jpg');
   height: 100vh;
@@ -30,7 +32,6 @@ header {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   height: 100%;
 }
@@ -52,32 +53,53 @@ nav {
   position: relative;
   border-radius: 4px 40%;
 }
-
-/* .logoDesign::after {
-  content: '';
-  display: block;
-  width: 22px;
-  height: 22px;
-  background-color: rgb(98, 98, 98);
-  border-radius: 4px 0 0 0;
+#menu {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.938);
+  width: 300px;
+  transition: all 0.25s ease-in-out;
 }
-.logoDesign::before {
-  content: '';
-  border-radius: 0 0 4px 0;
-  position: absolute;
-  display: block;
-  width: 22px;
-  height: 22px;
-  background-color: rgb(98, 98, 98);
-  right: 0;
-  bottom: 0;
-} */
-
+header nav ul li {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 40px;
+}
+header nav ul li:hover {
+  color: #f9b52e;
+  border-bottom: 1px solid #fff;
+}
+#menuOpen,
+#menuClose {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  z-index: 1000;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+#menuClose {
+  font-size: 50px;
+  top: 25px;
+  right: 35px;
+  display: none;
+}
 .home {
   display: flex;
-  align-items: center;
-  /* justify-content: center; */
+  /* align-items: center; */
+  justify-content: center;
   padding-left: 200px;
+  flex-direction: column;
 }
 .home h1 {
   font-size: 90px;
@@ -85,4 +107,20 @@ nav {
 .home h1 span {
   color: #7a9500;
   font-family: 'Times New Roman', Times, serif;
+}
+.home p {
+  width: 40%;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.createUser {
+  padding: 8px 25px;
+  font-size: 18px;
+  background-color: #f9b52e;
+  color: #333;
+}
+.createUser:hover {
+  background-color: #c88b10;
+  color: #fff;
 }
