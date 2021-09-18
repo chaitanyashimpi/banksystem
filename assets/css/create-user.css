@@ -82,3 +82,59 @@ footer h4 {
 footer a {
   color: red;
 }
+
+/* Main section */
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crtComponent {
+  height: 70vh;
+  width: 50vw;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.compNav {
+  background-color: #c3d946;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  /* padding: 10px; */
+  border-radius: 20px;
+}
+.compNav h1 {
+  border-bottom: 1px solid #333;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.compNav ul {
+  width: 100%;
+  margin-top: 20px;
+}
+.compNav ul li {
+  height: 50px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.compNav ul li:hover {
+  background-color: #8ea319;
+}
+.compMainNav {
+  padding: 20px;
+  border-radius: 20px;
+  width: 70%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.26);
+}
+.compNav ul a {
+  color: #333;
+}
