@@ -25,7 +25,7 @@
         settiings, for which you used to have to the branch online-banking.
       </p>
       <div class="buttons">
-        <a href="" class="createUser">Create User</a>
+        <a href="create-user.php" class="createUser">Create User</a>
       </div>
     </section>
 
