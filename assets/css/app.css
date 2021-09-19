@@ -90,6 +90,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 500;
 }
 footer h4 {
   font-weight: 400;
@@ -329,4 +330,119 @@ form.transferForm {
   margin-bottom: 10px;
   font-size: 17px;
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .crtComponent {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 1201px) {
+  #menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 600;
+    background-color: rgba(51, 51, 51, 0.938);
+    width: 300px;
+    height: 100vh;
+    justify-content: center;
+    transition: 0.35s ease-in-out;
+  }
+  #menu li {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 17px;
+  }
+  #menuOpen,
+  #menuClose {
+    display: inherit;
+    z-index: 1000;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: #333;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  #menuClose {
+    color: #fff;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  .crtComponent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .compNav h1 {
+    display: none;
+  }
+  .compNav {
+    flex-direction: row;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .compNav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+  .compNav ul li {
+    border-bottom: 0;
+  }
+  .compMainNav {
+    width: 100%;
+    box-shadow: none;
+    height: max-content;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 40px;
+  }
+  .userTable {
+    height: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 901px) {
+  table.userDetails tr td:first-child,
+  table.userDetails tr th:first-child {
+    display: none;
+  }
+  table.userDetails th,
+  table.userDetails td {
+    font-size: 13px;
+  }
+  .crtComponent {
+    width: 99vw;
+  }
+  header {
+    padding: 0 20px;
+  }
+  .logo h1 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 707px) {
+  .compNav ul li {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 636px) {
+  table.userDetails th,
+  table.userDetails td {
+    font-size: 12px;
+  }
+  .userTable {
+    margin: 10px 0;
+  }
+  table.userDetails {
+    width: 99vw;
+    overflow-x: auto;
+  }
 }
