@@ -12,8 +12,17 @@
     <title>CRT Bank | Transfer Money</title>
   </head>
   <body>
-    <?php 
+  <?php 
       include "./components/header.php";
+      $status = $_GET['status'];
+      if($status == 1){
+        
+      ?>
+        <script>
+          alert("You do not have sufficient Amount!!");
+        </script>
+        <?php
+      }
     ?>
     <main class="crtbanking">
       <div class="crtComponent">

@@ -9,7 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <title>CRT Bank | Transfer Money</title>
+    <title>CRT Bank | Transaction History</title>
   </head>
   <body>
     <?php 
@@ -21,7 +21,7 @@
             require "./components/all-in-one-component.php"
         ?>
         <div class="compMainNav">
-          <h2>~~ Transfer Money ~~</h2>
+          <h2>~~ Transaction History ~~</h2>
           <div class="userTable">
             <table class="userDetails">
               <tr>
@@ -35,7 +35,7 @@
                 <?php
                 require 'backend/config.php';
                 
-                $select = "SELECT * FROM transaction_history";
+                $select = "SELECT * FROM transaction_history ORDER BY transfer_date desc";
                 $selectResult = $conn->query($select); 
                 $srno = 1;
                 while($row = mysqli_fetch_array($selectResult)){

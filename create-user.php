@@ -13,11 +13,21 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>CRT Bank | Create User</title>
   </head>
   <body>
     <?php 
       include "./components/header.php";
+      $status = $_GET['status'];
+      if($status == 1){
+        
+      ?>
+        <script>
+          alert("User Already Exist");
+        </script>
+        <?php
+      }
     ?>
     <main class="crtbanking">
       <div class="crtComponent">
@@ -77,5 +87,6 @@
     <?php 
         include './components/footer.php';
     ?>
+    
   </body>
 </html>

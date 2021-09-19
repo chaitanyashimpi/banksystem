@@ -16,6 +16,18 @@ a {
 ul {
   list-style: none;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  background-color: #c3d946;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #8ea319;
+}
+
 /* Header */
 
 header {
@@ -211,6 +223,8 @@ main {
   color: #fff;
 }
 .userTable {
+  height: 600px;
+  overflow-y: auto;
   margin: 10px;
 }
 table.userDetails {
@@ -218,10 +232,13 @@ table.userDetails {
   border: 1px solid #333;
   border-collapse: collapse;
 }
+table.userDetails tr:first-child {
+  background-color: rgba(107, 107, 107, 0.356);
+}
 table.userDetails th,
 table.userDetails td {
   border: 1px solid #333;
-  padding: 5px;
+  padding: 10px;
 }
 table.userDetails a {
   background-color: #c3d946;
@@ -270,4 +287,46 @@ form.transferForm {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+}
+.contact {
+  padding: 10px;
+}
+.contact h1 {
+  font-size: 25px;
+}
+.contact hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #333;
+}
+.impLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.impLinks a {
+  padding: 10px 20px;
+  background: #c3d946;
+  border-radius: 10px;
+  color: #333;
+  font-weight: bold;
+}
+.impLinks p:hover,
+.impLinks p:hover > a {
+  background: #d9ff00;
+  /* color: #fff; */
+}
+.contactDetails {
+  width: 100%;
+  padding: 40px 20px;
+}
+.contactDetails h4 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 17px;
+  letter-spacing: 1px;
 }

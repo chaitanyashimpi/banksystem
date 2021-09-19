@@ -10,7 +10,13 @@
     $selectFirstResult = $conn->query($selectFirst);
 
     $row1 = mysqli_fetch_array($selectFirstResult);
-    $firstNewAmount = $row1[0] - $transferAmount;
+
+    if($row1[0] < $transferAmount){
+        $status= 1;
+        header("Location: ../transfer-money.php?status=$status");
+    }
+    else{
+        $firstNewAmount = $row1[0] - $transferAmount;
     
     // Second User (Money Transfered to)
     $selectSecond = "SELECT balance FROM user WHERE id = '".$userId."'";
@@ -37,5 +43,9 @@
         $secondNameRow = mysqli_fetch_array($selectSecondName);
         
     $insertHistory = $conn->query("INSERT INTO transaction_history(sender, receiver, amount,transfer_date) VALUES ('$firstNameRow[0]', '$secondNameRow[0]', '$transferAmount', CURRENT_TIMESTAMP)");
+
+    header("Location: ../transaction-history.php");
+    }
     
+
 ?>

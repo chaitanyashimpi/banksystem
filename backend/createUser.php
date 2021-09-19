@@ -10,7 +10,8 @@
   $selectResult = $conn->query($select);
 
     if(mysqli_num_rows($selectResult)){
-        header('Location: ../create-user.php');
+        $status= 1;
+        header("Location: ../create-user.php?status=$status");
     }
     else{
         $add_user = "INSERT INTO user(name,email,balance) VALUES ('$name', '$email', '$balance')";
