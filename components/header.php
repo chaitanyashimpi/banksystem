@@ -13,13 +13,13 @@
       <a href="create-user.php">
         <li>Create User</li>
       </a>
-      <a href="#">
+      <a href="transfer-money.php">
         <li>Transfer Money</li>
       </a>
-      <a href="#">
+      <a href="transaction-history.php">
         <li>Transaction History</li>
       </a>
-      <a href="#">
+      <a href="contact.php">
         <li>Contact Us</li>
       </a>
     </ul>

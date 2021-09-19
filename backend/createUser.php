@@ -16,7 +16,7 @@
         $add_user = "INSERT INTO user(name,email,balance) VALUES ('$name', '$email', '$balance')";
         
         if(mysqli_query($conn, $add_user)){
-              header("Location: ../index.php");
+              header("Location: ../transfer-money.php");
         }
         else{
             header('Location: ../create-user.php');

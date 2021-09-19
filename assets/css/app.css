@@ -98,7 +98,7 @@ main {
 
 .crtComponent {
   height: 70vh;
-  width: 50vw;
+  width: 70vw;
   display: flex;
   align-items: space-between;
   justify-content: space-between;
@@ -109,7 +109,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 25%;
+  width: 20%;
   /* padding: 10px; */
   border-radius: 20px;
 }
@@ -142,7 +142,7 @@ main {
   /* padding: 20px; */
   overflow: hidden;
   border-radius: 20px;
-  width: 70%;
+  width: 76%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.26);
 }
 .compMainNav h2 {
@@ -209,4 +209,65 @@ main {
 .userForm form div input:hover {
   background: #8ea319;
   color: #fff;
+}
+.userTable {
+  margin: 10px;
+}
+table.userDetails {
+  width: 100%;
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+table.userDetails th,
+table.userDetails td {
+  border: 1px solid #333;
+  padding: 5px;
+}
+table.userDetails a {
+  background-color: #c3d946;
+  padding: 4px 20px;
+  color: #333;
+  font-weight: 500;
+}
+table.userDetails a:hover {
+  background-color: #8ea319;
+  color: #fff;
+}
+.center {
+  text-align: center;
+}
+.userTable h3 {
+  margin-top: 30px;
+}
+form.transferForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.transferForm select {
+  width: 50%;
+  padding: 5px 10px;
+  outline: none;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.transferForm input {
+  width: 50%;
+  outline: none;
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+.transferForm input[type='submit'] {
+  background-color: #c3d946;
+  color: #333;
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
 }

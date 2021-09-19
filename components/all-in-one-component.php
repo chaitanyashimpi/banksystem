@@ -5,7 +5,7 @@
             <a href="create-user.php">
               <li>Create User</li>
             </a>
-            <a href="#">
+            <a href="transfer-money.php">
               <li>Transfer Money</li>
             </a>
             <a href="#">
