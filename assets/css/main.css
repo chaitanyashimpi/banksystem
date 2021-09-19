@@ -61,7 +61,11 @@ nav {
   color: #333;
 }
 #menu li:hover {
-  font-weight: bold;
+  background-color: grey;
+}
+#menuOpen,
+#menuClose {
+  display: none;
 }
 footer {
   height: 60px;
@@ -114,6 +118,7 @@ main {
   width: 100%;
   text-align: center;
   margin-top: 10px;
+  font-size: 25px;
 }
 .compNav ul {
   width: 100%;
@@ -121,20 +126,87 @@ main {
 }
 .compNav ul li {
   height: 50px;
-  padding: 0 10px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   width: 100%;
+  border-bottom: 1px solid #8ea3195e;
 }
 .compNav ul li:hover {
   background-color: #8ea319;
 }
+.compNav ul a {
+  color: #333;
+}
 .compMainNav {
-  padding: 20px;
+  /* padding: 20px; */
+  overflow: hidden;
   border-radius: 20px;
   width: 70%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.26);
 }
-.compNav ul a {
+.compMainNav h2 {
+  width: 100%;
+  text-align: center;
+  background-color: #c3d946;
+  padding: 5px 0;
+}
+.userIcon i {
+  font-size: 130px;
+  background-color: #c3d946;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: 10px;
   color: #333;
+}
+.userIcon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.userForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.userForm form {
+  width: 80%;
+}
+.userForm p {
+  width: 100%;
+}
+.userForm p input {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+}
+.userForm input::placeholder {
+  color: #333;
+}
+.userForm form div {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userForm form div input {
+  width: 90%;
+  outline: none;
+  border: 0;
+  margin-right: 10px;
+  padding: 10px;
+  background: #c3d946;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.userForm form div input:hover {
+  background: #8ea319;
+  color: #fff;
 }
