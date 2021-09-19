@@ -96,7 +96,6 @@ header nav ul li:hover {
 }
 .home {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   padding-left: 200px;
   flex-direction: column;
@@ -123,4 +122,72 @@ header nav ul li:hover {
 .createUser:hover {
   background-color: #c88b10;
   color: #fff;
+}
+
+@media only screen and (max-width: 1116px) {
+  #menuOpen {
+    color: #333;
+  }
+  .logo {
+    padding-top: 40px;
+  }
+}
+@media only screen and (max-width: 1535px) {
+  .home h1 {
+    font-size: 50px;
+  }
+  .home p {
+    font-size: 15px;
+  }
+  .createUser {
+    font-size: 15px;
+  }
+  .home {
+    background-position: left top;
+  }
+}
+@media only screen and (max-width: 808px) {
+  header {
+    padding: 0 50px;
+  }
+  .home {
+    padding-left: 100px;
+  }
+  .home p {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 606px) {
+  .home {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .home h1 {
+    font-size: 30px;
+  }
+  .home p {
+    font-size: 14px;
+  }
+  .createUser {
+    font-size: 14px;
+  }
+  .logo h1 {
+    font-size: 25px;
+  }
+  .logoDesign {
+    width: 30px;
+    height: 30px;
+  }
+  .header {
+    padding: 40px 10px;
+  }
+}
+
+@media only screen and (max-width: 333px) {
+  .home {
+    padding-left: 20px;
+  }
 }
