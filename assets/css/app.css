@@ -437,6 +437,12 @@ form.transferForm {
     height: 50px;
     font-size: 14px;
   }
+  .contactDetails {
+    padding: 30px 10px;
+  }
+  .contactDetails h4 {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 707px) {
   .compNav ul li {
