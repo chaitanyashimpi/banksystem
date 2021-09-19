@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
   </head>
   <body>
     <?php 

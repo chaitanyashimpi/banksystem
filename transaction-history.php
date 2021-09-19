@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <title>CRT Bank | Transaction History</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
   </head>
   <body>
     <?php 
