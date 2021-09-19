@@ -40,10 +40,10 @@
                       <a href="https://crtbank.cratonik.com" target="_blank">Live Project</a>
                   </p>
                   <p>
-                      <a href="https://chaitanyashimpi.netlify.app/" target="_blank">Creator's Portfolio</a>
+                      <a href="https://chaitanyashimpi.netlify.app/" target="_blank">Coder's Portfolio</a>
                   </p>
                   <p>
-                      <a href="https://cratonik.com/" target="_blank">Creator's Business Site</a>
+                      <a href="https://cratonik.com/" target="_blank">Business Site</a>
                   </p>
               </div>
           </div>
