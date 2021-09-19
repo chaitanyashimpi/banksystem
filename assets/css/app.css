@@ -427,6 +427,18 @@ form.transferForm {
   }
 }
 @media only screen and (max-width: 707px) {
+  .impLinks {
+    /* flex-direction: column; */
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .impLinks p {
+    height: 50px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 707px) {
   .compNav ul li {
     font-size: 12px;
     font-weight: bold;
