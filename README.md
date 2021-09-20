@@ -19,7 +19,7 @@ LICENSE:
 ==========================
 Copyright (c) 2021 Chaitanya Shimpi
 
-This projects are licensed under the MIT License
+This project is licensed under the Apache License
 
 
  <p align="center">
